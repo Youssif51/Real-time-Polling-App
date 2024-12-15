@@ -4,7 +4,7 @@ const ws = new WebSocket("ws://localhost:8080");
 
 ws.on("open", () => {
   console.log("WebSocket connected");
-  ws.send("Hello from client");
+  ws.send("this msg from client");
 });
 ws.on("message", (data) => {
   console.log("Received message:", data);
